@@ -1,0 +1,28 @@
+{
+	"name": "greenshiftchart",
+	"version": "0.1.0",
+	"description": "",
+	"author": "",
+	"license": "",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"build:custom": "wp-scripts build src/front.js --output-path=front",
+		"format:js": "wp-scripts format-js",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"start:custom": "wp-scripts start src/front.js --output-path=front",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"dependencies": {
+		"chart.js": "^2.9.4",
+		"chartjs-plugin-datalabels": "^0.7.0",
+		"immutability-helper": "^3.1.1",
+		"react-sortable-hoc": "^2.0.0",
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^13.0.3"
+	}
+}
